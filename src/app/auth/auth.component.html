@@ -1,0 +1,19 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+    <label for="username">Username: </label>
+    <input id="username" type="text" formControlName="username">
+  
+    <label for="password">Password: </label>
+    <input id="password" type="text" formControlName="password">
+    
+    <button type="submit">Submit</button>
+</form>
+<p>My token : {{myToken}}</p>
+
+<form [formGroup]="idForm" (ngSubmit)="getUser()">
+
+    <label for="id">ID: </label>
+    <input id="id" type="text" formControlName="id">
+
+    <button type="submit">Get User</button>
+</form>
